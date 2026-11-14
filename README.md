@@ -18,7 +18,7 @@ Todo con registro de auditoría (quién cambió qué y cuándo) y contraseñas p
 
 ## Dato Curioso
 
-El nombre viene de **永遠 (eien)**, “eternidad”.
+El nombre viene del Japonés **永遠 (eien)**, “eternidad”.
 
 ## Estado Actual
 
