@@ -225,3 +225,4 @@ $RECYCLE.BIN/
 
 # Evidencias de prueba (firmas y fotos)
 test_uploads/
+.csv
