@@ -13,7 +13,7 @@ CREATE TABLE conductores (
 CREATE TABLE paquetes (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     destinatario VARCHAR(250) NOT NULL,
-    direccion VARCHAR(120) NOT NULL
+    direccion VARCHAR(120) NOT NULL,
     complemento_direccion VARCHAR(150),
     referencias_entrega VARCHAR(255),
     peso_kg NUMERIC(6, 2) NOT NULL CHECK (peso_kg > 0)
@@ -21,7 +21,7 @@ CREATE TABLE paquetes (
 
 CREATE TABLE asignaciones (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    paquete_id INT NOT NULL REFERENCES paquetes(id)
+    paquete_id INT NOT NULL REFERENCES paquetes(id),
     conductor_id INT NOT NULL REFERENCES conductores(id)
 );
 
