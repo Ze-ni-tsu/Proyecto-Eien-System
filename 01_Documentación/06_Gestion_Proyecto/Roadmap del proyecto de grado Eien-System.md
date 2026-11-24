@@ -13,7 +13,7 @@ Versión 1.1 · 21 de noviembre de 2026 · Autor: David Alejandro Meyer Romero �
 - **Repositorio.** Estructura GFPI-F-135 V04 confirmada, carpetas adicionales aprobadas por el instructor, carpeta `test_uploads/` ignorada por Git y repositorio público sin datos personales ni secretos.
 - **Fase 0.** Se retira la página web de práctica; HTML, CSS y JavaScript se aprenden justo a tiempo en el sprint 1.
 
-* **Bitácora de cierre de fase.** Cada fase termina con un registro obligatorio en la bitácora del proyecto (sección 6).
+- **Bitácora de cierre de fase.** Cada fase termina con un registro obligatorio en la bitácora del proyecto (sección 6).
 
 ## 2. Cómo usar este roadmap
 
@@ -33,7 +33,7 @@ Reglas de juego:
 - **Ritmo de referencia: 9 horas semanales**, repartidas en un bloque largo de unas 4 horas y tres bloques cortos de 1 a 1,5 horas. Los trayectos y tiempos de espera se usan para lectura técnica y no cuentan como horas del proyecto.
 - **El descanso es parte del plan.** No se programa el 100 % del tiempo libre.
 
-* **Bitácora de cierre obligatoria.** Cada fase termina con un registro en `01_Documentacion/Gestion_Proyecto/Bitacora_Fases.md`. Sin registro, la fase no se cierra.
+- **Bitácora de cierre obligatoria.** Cada fase termina con un registro en `01_Documentacion/Gestion_Proyecto/Bitacora_Fases.md`. Sin registro, la fase no se cierra.
 
 ## 3. Vista general y calendario
 
@@ -83,7 +83,7 @@ En paralelo corre una línea transversal con las demás competencias del program
 
 Se usa la estructura GFPI-F-135 V04 tal cual, con nombres sin tildes ni espacios. Las carpetas `Gestion_Proyecto`, `Decisiones` y `.github/workflows` son adiciones aprobadas por el instructor.
 
-```
+```txt
 Eien_System/
 ├── .github/
 │   └── workflows/
@@ -145,7 +145,7 @@ Un equipo real reparte roles; aquí se usan «sombreros» y se declara cuál se 
 - **Definición de terminado (DoD).** Código en `develop` mediante Pull Request con la integración continua en verde, pruebas escritas y pasando, endpoint documentado, funcionamiento en el entorno de pruebas, demostración hecha y tarjeta en Hecho.
 - **Bitácora de lecciones aprendidas y registro de riesgos,** actualizados al final de cada sprint.
 
-* **Bitácora de cierre de fase (obligatoria).** Cada fase termina con un registro en `01_Documentacion/Gestion_Proyecto/Bitacora_Fases.md`, con esta forma, y la fase no se da por cerrada hasta que exista:
+- **Bitácora de cierre de fase (obligatoria).** Cada fase termina con un registro en `01_Documentacion/Gestion_Proyecto/Bitacora_Fases.md`, con esta forma, y la fase no se da por cerrada hasta que exista:
 
 ```markdown
 ## Fase X · Nombre (fecha de cierre)
