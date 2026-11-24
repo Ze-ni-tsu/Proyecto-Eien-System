@@ -37,9 +37,9 @@ INSERT INTO paquetes (destinatario, direccion, complemento_direccion, referencia
 VALUES
     ('Alejandro Meyer', 'calle 1 # 2 - 3', 'Int 4 Apto 5', 'Dejar en portería', 256),
     ('Lucero Zonpin', 'calle 4 # 5 - 6', NULL, NULL, 24),
-    ('Kenji Takahashi', '1-23-4 Jinnan, Shibuya-ku, Tokyo 150-0041, Japón', NULL, NULL, 75),
+    ('Kenji Takahashi', '1-23-4 Jinnan, Shibuya-ku, Tokyo 150-0041, Japón', NULL, NULL, 3),
     ('Haruka Sato', '456-7 Gionmachi Minamigawa, Higashiyama-ku, Kyoto-shi, Kyoto 605-0074, Japón', NULL, NULL, 1234),
-    ('Ren Suzuki', '2-8-15 Namba, Chuo-ku, Osaka-shi, Osaka 542-0076, Japón', NULL, NULL, 190);
+    ('Ren Suzuki', '2-8-15 Namba, Chuo-ku, Osaka-shi, Osaka 542-0076, Japón', NULL, NULL, 1);
 
 INSERT INTO asignaciones (paquete_id, conductor_id)
 VALUES
