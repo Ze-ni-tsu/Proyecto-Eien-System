@@ -43,11 +43,11 @@ VALUES
 
 INSERT INTO asignaciones (paquete_id, conductor_id)
 VALUES
-    (1, 1)
-    (2, 2)
-    (3, 3)
-    (4, 2)
-    (5, 1)
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 2),
+    (5, 1);
 
 -- Select and Order by Query
 
