@@ -45,7 +45,7 @@
 | Python básico | 8 | 2,4 |
 | Programa CSV | 3 | 2 |
 | SQL | 3 | 1,3 |
-| Cierre | 0,5 | XX |
+| Cierre | 0,5 | 0,5 |
 | **Total** | **20** | **8,5** |
 
 Mayor desviación: Programa CSV por se realizo commit del CSV antes de incluirlo en .gitignore.
