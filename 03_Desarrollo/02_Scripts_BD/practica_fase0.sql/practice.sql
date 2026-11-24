@@ -48,3 +48,10 @@ VALUES
     (3, 3)
     (4, 2)
     (5, 1)
+
+-- Select and sort by kg, from heaviest to lightest
+
+SELECT peso_kg
+FROM paquetes 
+WHERE peso_kg > 3
+ORDER BY peso_kg DESC;
