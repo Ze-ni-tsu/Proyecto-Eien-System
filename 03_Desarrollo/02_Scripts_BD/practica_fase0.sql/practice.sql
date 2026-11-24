@@ -67,3 +67,16 @@ INNER JOIN paquetes AS p
     ON a.paquete_id = p.id
 INNER JOIN conductores AS c 
     ON a.conductor_id = c.id;
+
+
+-- Group by Query
+
+SELECT 
+    c.id AS id_conductor,
+    c.nombre AS nombre_conductor,
+    COUNT(a.paquete_id) AS total_paquetes
+FROM conductores AS c
+LEFT JOIN asignaciones AS a 
+    ON c.id = a.conductor_id
+GROUP BY c.id, c.nombre
+ORDER BY total_paquetes DESC;
