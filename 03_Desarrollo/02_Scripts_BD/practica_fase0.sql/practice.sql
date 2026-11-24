@@ -80,3 +80,27 @@ LEFT JOIN asignaciones AS a
     ON c.id = a.conductor_id
 GROUP BY c.id, c.nombre
 ORDER BY total_paquetes DESC;
+
+-- Integrity tests 1
+
+INSERT INTO asignaciones (paquete_id, conductor_id)
+VALUES
+    (1, 1); 
+    
+-- ERROR:  inserción o actualización en la tabla «asignaciones» viola la llave foránea «asignaciones_paquete_id_fkey»
+--La llave (paquete_id)=(6) no está presente en la tabla «paquetes». 
+
+--SQL state: 23503
+-- Detail: La llave (paquete_id)=(6) no está presente en la tabla «paquetes».
+
+-- Integrity tests 2
+
+INSERT INTO paquetes (destinatario, direccion, complemento_direccion, referencias_entrega, peso_kg)
+VALUES
+    ('Angie Martinez', 'calle 9 # 8 - 7', NULL, NULL, 0);
+
+-- ERROR:  el nuevo registro para la relación «paquetes» viola la restricción «check» «paquetes_peso_kg_check»
+--La fila que falla contiene (6, Angie Martinez, calle 9 # 8 - 7, null, null, 0.00). 
+
+-- SQL state: 23514
+-- Detail: La fila que falla contiene (6, Angie Martinez, calle 9 # 8 - 7, null, null, 0.00).
