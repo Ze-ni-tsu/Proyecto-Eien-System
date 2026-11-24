@@ -7,7 +7,7 @@
 CREATE TABLE conductores (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     nombre VARCHAR(250) NOT NULL,
-    telefono INT NOT NULL
+    telefono VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE paquetes (
