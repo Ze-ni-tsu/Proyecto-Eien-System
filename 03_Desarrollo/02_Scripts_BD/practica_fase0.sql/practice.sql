@@ -49,9 +49,21 @@ VALUES
     (4, 2)
     (5, 1)
 
--- Select and sort by kg, from heaviest to lightest
+-- Select and Order by Query
 
 SELECT peso_kg
 FROM paquetes 
 WHERE peso_kg > 3
 ORDER BY peso_kg DESC;
+
+-- Join Query
+
+SELECT 
+    p.id AS paquete_id,
+    p.direccion,
+    c.nombre AS nombre_conductor
+FROM asignaciones AS a
+INNER JOIN paquetes AS p 
+    ON a.paquete_id = p.id
+INNER JOIN conductores AS c 
+    ON a.conductor_id = c.id;
