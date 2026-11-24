@@ -4,6 +4,8 @@
 
 -- Tables creation
 
+DROP TABLE IF EXISTS conductores, paquetes, asignaciones;
+
 CREATE TABLE conductores (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     nombre VARCHAR(250) NOT NULL,
@@ -29,9 +31,9 @@ CREATE TABLE asignaciones (
 
 INSERT INTO conductores (nombre, telefono)
 VALUES
-    ('Alejandro Meyer', 01234567890),
-    ('Takaeshi Takashita', 12345678901),
-    ('Yamada Kimono', 23456789012);
+    ('Alejandro Meyer', '01234567890'),
+    ('Takaeshi Takashita', '12345678901'),
+    ('Yamada Kimono', '23456789012');
 
 INSERT INTO paquetes (destinatario, direccion, complemento_direccion, referencias_entrega, peso_kg)
 VALUES
@@ -83,9 +85,9 @@ ORDER BY total_paquetes DESC;
 
 -- Integrity tests 1
 
-INSERT INTO asignaciones (paquete_id, conductor_id)
-VALUES
-    (1, 1); 
+--INSERT INTO asignaciones (paquete_id, conductor_id)
+--VALUES
+    --(6, 1); 
     
 -- ERROR:  inserción o actualización en la tabla «asignaciones» viola la llave foránea «asignaciones_paquete_id_fkey»
 --La llave (paquete_id)=(6) no está presente en la tabla «paquetes». 
@@ -95,9 +97,9 @@ VALUES
 
 -- Integrity tests 2
 
-INSERT INTO paquetes (destinatario, direccion, complemento_direccion, referencias_entrega, peso_kg)
-VALUES
-    ('Angie Martinez', 'calle 9 # 8 - 7', NULL, NULL, 0);
+--INSERT INTO paquetes (destinatario, direccion, complemento_direccion, referencias_entrega, peso_kg)
+--VALUES
+    --('Angie Martinez', 'calle 9 # 8 - 7', NULL, NULL, 0);
 
 -- ERROR:  el nuevo registro para la relación «paquetes» viola la restricción «check» «paquetes_peso_kg_check»
 --La fila que falla contiene (6, Angie Martinez, calle 9 # 8 - 7, null, null, 0.00). 
