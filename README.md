@@ -24,4 +24,4 @@ El nombre viene del Japonés **永遠 (eien)**, “eternidad”.
 
 | **Estado** | **Última Fecha Actualización** (dd/mm/aaaa) |
 | :---: | :---: |
-| **En construcción** | 22/11/2026 |
+| **En construcción** | 23/11/2026 |
