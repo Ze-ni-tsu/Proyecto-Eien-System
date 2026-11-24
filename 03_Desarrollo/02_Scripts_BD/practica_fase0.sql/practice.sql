@@ -16,7 +16,7 @@ CREATE TABLE paquetes (
     direccion VARCHAR(120) NOT NULL
     complemento_direccion VARCHAR(150),
     referencias_entrega VARCHAR(255),
-    peso_kg INT NOT NULL
+    peso_kg NUMERIC(6, 2) NOT NULL CHECK (peso_kg > 0)
 );
 
 CREATE TABLE asignaciones (
