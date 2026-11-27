@@ -27,7 +27,7 @@
 - [x] JOIN correctos: [Evidencia](https://github.com/Ze-ni-tsu/Proyecto-Eien-System/blob/main/03_Desarrollo/02_Scripts_BD/practica_fase0.sql/practice.sql); devuelve 5 filas.
 - [x] Tablero de Trello con fechas por fase.
 
-**Veredicto:** Parcial. Hizo falta dos días de commits adicionales.
+**Veredicto:** Parcial, con desviación aceptada. Se hicieron 31 commits (meta: 10) en 3 días (meta: 5), porque la fase se completó en 3 días en vez de 16. No se agregaron commits artificiales.
 
 ### Entregables
 
@@ -48,11 +48,12 @@
 | Cierre | 0,5 | 0,5 |
 | **Total** | **20** | **9** |
 
-Mayor desviación: Programa CSV por se realizo commit del CSV antes de incluirlo en .gitignore.
+Mayor desviación: Python básico, plan 8 h y real 2,4 h (−5,6 h), por tener conocimientos básicos previos al desarrollo de los ejercicios.
 
 ### Decisiones
 
 - Los archivos de datos de prueba no se versionan (`*.csv` en `.gitignore`).
+- Se acepta la desviación de la puerta de commits. En las siguientes fases la constancia se medirá por semana.
 
 ### Lo aprendido y lo que me trabó
 
